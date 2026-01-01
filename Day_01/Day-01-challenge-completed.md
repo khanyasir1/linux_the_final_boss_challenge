@@ -18,10 +18,10 @@ The goal is to understand:
 
 ### AWS EC2 Instances Used
 
-| Distribution        | Instance ID              | Instance Type | Public IP        |
-|---------------------|--------------------------|---------------|------------------|
-| Amazon Linux 2023   | i-0d74a889c07d55ac6      | t2.nano      | 18.215.183.250   |
-| Ubuntu 24.04 LTS    | i-04e0e77050971e4c2      | t2.nano      | 75.101.191.93    |
+| Distribution        | Instance Type |
+|---------------------|---------------|
+| Amazon Linux 2023   | t2.nano      | 
+| Ubuntu 24.04 LTS    | t2.nano      |
 
 ### Key Pair
 - **Key Name:** `linux-30-days.pem`
@@ -55,13 +55,13 @@ Both instances were launched successfully and reached the **Running** state.
 ### Amazon Linux
 
 ```bash
-ssh -i "linux-30-days.pem" ec2-user@18.215.183.250
+ssh -i "linux-30-days.pem" ec2-user@your-ec2-public-ip
 ```
 
 ### Ubuntu
 
 ```bash
-ssh -i "linux-30-days.pem" ubuntu@75.101.191.93
+ssh -i "linux-30-days.pem" ubuntu@your-ec2-public-ip
 ```
 
 ---
